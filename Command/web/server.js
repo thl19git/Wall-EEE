@@ -26,7 +26,7 @@ var green = {seen: 0, x: 0, y: 0};
 var pink = {seen: 0, x: 0, y: 0};
 var yellow = {seen: 0, x: 0, y: 0};
 
-var map = {x: 0, y: 0, redx: 0, redy: 0, greenx: 0, greeny: 0, bluex: 0, bluey: 0, pinkx: 0, pinky: 0, yellowx: 0, yellowy: 0};
+var map = {x: 0, y: 0, rotation: 0, redx: 0, redy: 0, greenx: 0, greeny: 0, bluex: 0, bluey: 0, pinkx: 0, pinky: 0, yellowx: 0, yellowy: 0};
 
 //reset the map
 cp.exec("./update_map -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 50",(err, stdout, stderr) => {
@@ -88,8 +88,10 @@ function updateState(stdout){
     var seenCount = red.seen + green.seen + blue.seen + pink.seen + yellow.seen;
 
     var data = (stdout.trim().split(/[\n,]/)).map(Number);
+    
+    if(data.length != 23) return;
 
-    if(Math.abs(data[0]-map.x)>9 || Math.abs(data[1]-map.y)>9) updateMapNow = true;
+    if(Math.abs(data[0]-map.x)>9 || Math.abs(data[1]-map.y)>9 || data[2] != map.rotation) updateMapNow = true;
     state.x = data[0];
     state.y = data[1];
     state.rotation = data[2];
@@ -161,6 +163,7 @@ function updateState(stdout){
         updateMap();
         map.x = state.x;
         map.y = state.y;
+        map.rotation = state.rotation;
         map.redx = red.x;
         map.redy = red.y;
         map.greenx = green.x;
