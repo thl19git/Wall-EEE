@@ -1,0 +1,63 @@
+BLUE:
+    % Define thresholds for channel 1 based on histogram settings
+    channel1Min = 0.569;
+    channel1Max = 0.652;
+
+    % Define thresholds for channel 2 based on histogram settings
+    channel2Min = 0.560;
+    channel2Max = 1.000;
+
+    % Define thresholds for channel 3 based on histogram settings
+    channel3Min = 0.217;
+    channel3Max = 1.000;
+
+RED:
+    % Define thresholds for channel 1 based on histogram settings
+    channel1Min = 0.014;
+    channel1Max = 0.066;
+
+    % Define thresholds for channel 2 based on histogram settings
+    channel2Min = 0.383;
+    channel2Max = 1.000;
+
+    % Define thresholds for channel 3 based on histogram settings
+    channel3Min = 0.403;
+    channel3Max = 1.000;
+
+YELLOW:
+    channel1Min = 0.147;
+    channel1Max = 0.238;
+
+    % Define thresholds for channel 2 based on histogram settings
+    channel2Min = 0.396;
+    channel2Max = 1.000;
+
+    % Define thresholds for channel 3 based on histogram settings
+    channel3Min = 0.880;
+    channel3Max = 1.000;
+
+GREEN:
+    % Define thresholds for channel 1 based on histogram settings
+    channel1Min = 0.474;
+    channel1Max = 0.519;
+
+    % Define thresholds for channel 2 based on histogram settings
+    channel2Min = 0.638;
+    channel2Max = 1.000;
+
+    % Define thresholds for channel 3 based on histogram settings
+    channel3Min = 0.373;
+    channel3Max = 1.000;
+
+PINK:
+    % Define thresholds for channel 1 based on histogram settings
+    channel1Min = 0.584;
+    channel1Max = 0.651;
+
+    % Define thresholds for channel 2 based on histogram settings
+    channel2Min = 0.249;
+    channel2Max = 1.000;
+
+    % Define thresholds for channel 3 based on histogram settings
+    channel3Min = 0.688;
+    channel3Max = 1.000;

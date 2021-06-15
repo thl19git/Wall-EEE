@@ -1,0 +1,40 @@
+Average colours for the images:
+
+/////////// RED ///////////////
+
+red_dark        hsv(1,70,48)
+red_medium      hsv(4,74,65)
+red_bright      hsv(359,84,55)
+
+/////////// YELLOW ////////////
+
+yellow_dark     hsv(69,79,51)
+yellow_medium   hsv(63,78,67)
+yellow_bright   hsv(55,95,59)
+
+/////////// GREEN /////////////
+
+green_dark      hsv(181,94,24)
+green_medium    hsv(177,95,44)
+green_bright    hsv(166,85,31)
+
+/////////// BLUE //////////////
+
+blue_dark       hsv(218,98,22)
+blue_medium     hsv(216,82,25)
+blue_bright     hsv(219,73,30)
+
+/////////// PINK //////////////
+
+pink_dark       hsv(319,39,51)
+pink_medium     hsv(332,38,75)
+pink_bright     hsv(341,50,72)
+
+///////////////////////////////
+suggested hue ranges:
+
+RED:        355-5
+YELLOW:     55-65
+GREEN:      165-185
+BLUE:       215-220
+PINK:       320-340
