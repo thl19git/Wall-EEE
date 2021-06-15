@@ -1,5 +1,7 @@
 # Control
 
+To install the ESP32 library for the Arduino IDE just follow the guide here: https://github.com/espressif/arduino-esp32
+
 The purpose of the control sub-system is to act as the central component which relays information to and from the relevant parts of the rover. The ESP32 microcontroller is what was used to receive and communicate the information to the other sub-systems. This sub-system had 5 main tasks: 
 * Receive information from the Vision sub-system 
 * Receive information from the Drive sub-system 
