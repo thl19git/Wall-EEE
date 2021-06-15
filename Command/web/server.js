@@ -89,7 +89,7 @@ function updateState(stdout){
 
     var data = (stdout.trim().split(/[\n,]/)).map(Number);
 
-    if(Math.abs(data[0]-map.x)>100 || Math.abs(data[1]-map.y)>100) updateMapNow = true;
+    if(Math.abs(data[0]-map.x)>9 || Math.abs(data[1]-map.y)>9) updateMapNow = true;
     state.x = data[0];
     state.y = data[1];
     state.rotation = data[2];
