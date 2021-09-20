@@ -3,7 +3,7 @@
 This project was developed for Year 2 of Electronic and Information Engineering at Imperial College London.
 
 A team of 6 worked on the project, each with a specific role:
-- Command
+- **Command**
 - Control
 - Vision
 - Energy
